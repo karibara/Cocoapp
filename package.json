@@ -1,0 +1,15 @@
+{
+  "name": "cocoapp",
+  "version": "1.0.0",
+  "description": "Web app which helps user to make the best hot chocolate",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Malgorzata Bozykowska",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "static": "^2.0.0"
+  }
+}
