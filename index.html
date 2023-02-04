@@ -13,23 +13,57 @@
 <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
- 
-
-    
-    
-    <div class="">
-      <div class="mx-auto ">
-        <h1 class="">CocoApp</h1>
-        <p class="">Na jakie kakałko masz dzisiaj ochotę?</p>
-        <button class="btn  btn-color btn-lg" type="button">Oblicz przepis</button>
-        
-      </div>
-      
-      
+ <!--this is main container width minimum height 100% fixed to viewport -->
+  <div class="container shadow min-vh-100">
+    <div class="container p-5">
+      <!--this is first row with main header-->  
+    <div class="row">
+        <div class="col">
+            <h1 class="font-weight-light pb-3">CocoApp</h1>
+        </div>
     </div>
-        
-    
-        <footer class="pt-3 mt-4  border-top fixed-bottom">
+    <!-- this is second row with text-->
+    <div class="row">
+        <div class="col">
+            <p class="pb-5 ">
+                Na jakie kakałko masz dzisiaj ochotę?
+            </p>
+        </div>
+    </div>
+    <!--this is row with coco slider and img -->
+    <div class="row ">
+        <div class="col-4">
+            <label for="customRange2" class="form-label">kakałkowatość</label>
+            <input type="range" class="form-range" min="0" max="5" id="customRange2">
+        </div>
+        <div class="col-1 mx-5">
+            <img src="public/images/mug-00.png" width="100" height="100" >
+        </div>
+    </div>
+
+    <!--this is row with sweet slider and spoon img-->
+    <div class="row ">
+      <div class="col-4">
+          <label for="customRange3" class="form-label">słodkość</label>
+          <input type="range" class="form-range" min="0" max="5" id="customRange3">
+      </div>
+      <div class="col-1 mx-5">
+          <img src="public/images/spoon-01.png" width="100" height="100" >
+      </div>
+  </div>
+
+    <!-- this is row with button - how to make it centered???-->
+    <div class="row">
+      <div class="col mx-auto">
+        <button type="submit" class="btn btn-lg btn-color" >Oblicz przepis</button>
+      </div>
+    </div>
+    </div>
+</div>
+   
+      
+      
+      <footer class="pt-3 mt-4  border-top ">
           Karibara © 2023
         </footer>
       
