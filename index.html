@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
     <!--Main CSS-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
 
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -30,39 +30,44 @@
                 
                 <div class="card-body">
                   <h2 class="card-title my-3">CocoApp</h2>
-                  <p class="card-text mt-4 ">Na jakie kakałko masz dzisiaj ochotę?</p>
+                    <div id="modify">
 
-                  
-                  <!--this is row with coco slider and img -->
-                  <div class="row mt-5">
-                      <div class="col-8">
-                          <label for="cocoaRange" class="form-label">kakałkowatość</label>
-                          <input type="range" class="form-range" min="0" max="2" id="cocoaRange">
+                      <p class="card-text mt-4 " id="paragraph">Na jakie kakałko masz dzisiaj ochotę?</p>
+                      
+                      
+                      
+                      <!--this is row with coco slider and img -->
+                      <div class="row mt-5">
+                          <div class="col-8">
+                              <label for="cocoaRange" class="form-label">kakałkowatość</label>
+                              <input type="range" class="form-range" min="0" max="2" id="cocoaRange">
+                            </div>
+                            <div class="col-4">
+                                <img class="mug" src="public/images/mug-00.png" >
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <img class="mug" src="images/mug-00.png" >
+                        
+                        <!--this is row with sweet slider and spoon img-->
+                        <div class="row mt-3 ">
+                            <div class="col-8">
+                                <label for="sweetRange" class="form-label">słodkość</label>
+                                <input type="range" class="form-range custom-slider" min="0" max="2" id="sweetRange">
+                            </div>
+                            <div class="col-4 ml-3">
+                                <img class="spoon" src="public/images/spoon-03.png" >
+                            </div>
                         </div>
-                    </div>
-                    
-                    <!--this is row with sweet slider and spoon img-->
-                    <div class="row mt-3 ">
-                        <div class="col-8">
-                            <label for="sweetRange" class="form-label">słodkość</label>
-                            <input type="range" class="form-range custom-slider" min="0" max="2" id="sweetRange">
-                        </div>
-                        <div class="col-4 ml-3">
-                            <img class="spoon" src="images/spoon-03.png" >
-                        </div>
-                    </div>
                         
                         <!--This is row with centered button-->
                         <div class="row pt-5 pb-3">
                             <div class="d-grid gap-2 col- mx-auto mt-4">
-                                <button type="submit"  class="btn  btn-color" id="recipeBtn">Oblicz przepis</button>
+                                <button type="button"  class="btn  btn-color" id="recipeBtn"> Oblicz przepis</button>
                                 
                             </div>
                         </div>
-                </div>
+                        
+                    </div>
+                    </div>
 
 
         </div>
@@ -79,7 +84,7 @@
      <!--Bootstrap JS--> 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!--Main JS-->
-    <script src="app.js"></script>
+    <!--Main JS (script no needed because it is separate server application)-->
+    <script src="index.js"></script>
 </body>
 </html>
