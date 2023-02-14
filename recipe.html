@@ -18,7 +18,7 @@
         <!--Google fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="setSpoon()">
     <!--main container-->
   <div class="container mt-5">
    
@@ -38,8 +38,8 @@
                     <ul>
 
                         <li>300 ml mleka</li>
-                        <li> <span id="sugarText">tsSugar</span> cukru</li>
                         <li><span id="cocoaText">tsCocoa</span> kakao</li>
+                        <li> <span id="sugarText">tsSugar</span> cukru</li>
 
                     </ul>
 
@@ -56,16 +56,18 @@
 
                     <h6>Smacznego!</h6>
                 
-                  </p>
+                 
 
+                
+                    <img src="/public/images/mug_gif.gif" alt="uśmiechnięty kubeczek" class="mug-gif">
                   
                   
                     
                    
                         
                         <!--This is row with button which leads to home page-->
-                        <div class="row pt-5 pb-3">
-                            <div class="d-grid gap-2 col- mx-auto mt-4">
+                        <div class="row pt-2 pb-3">
+                            <div class="d-grid gap-2 col-mx-auto">
                                 <button type="submit"  class="btn btn-size btn-outline-light" id="recipeBtn">Oblicz jeszcze raz</button>
                                 
                             </div>
